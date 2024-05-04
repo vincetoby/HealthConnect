@@ -4,29 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HealthConnect</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" type="text/css" href="filters.css">
+    <link rel='shortcut icon' href="../images/logo.png" />
 </head>
 <body>
     <header title="Logo">
-        <h1>Welcome to HealthConnect</h1>
-    </header>
-	<-- Navigation Bar-->
-    <nav>
+	<img src="../images/logo1.png" alt="HealthConnect Logo">
+	<nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="healthconnect.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+	    <li><a href="signup.html">Join us</a></li>
         </ul>
-	<form action="/search" method="get">
+	</nav>
+    </header>
+	<!--<form action="/search" method="get">
         <input type="text" name="query" placeholder="Search..." aria-label="Search">
-        <button type="submit">Search</button>
+	<button title="search-button" type="submit">Search</button>
     </form>
-    </nav>
+    </nav>-->
     <div class="container">
         <section class="filters">
-		<button title="search button">search</button>
+		<!--<form action="/search" method="get">
+        <input type="text" name="query" placeholder="Search..." aria-label="Search">
+        <button title="search-button" type="submit">Search</button>
+    </form>
+
+		<!--button title="search button">search</button->
 		<div class="health-professionals" role="menu">
 			<h3>Health Professionals</h3>
 			<h4>Cardiologist, Medical Scientists, Optometrist..</h4>
@@ -48,10 +56,18 @@
                     <li>
 			    <p class="login"><a href="login.html">Login</a></p>
 		    </li>
-                </ul>
+		</ul>-->
 		</div>
 	</section>
     </div>
+    <main>
+        <section class="search-section">
+            <form class="search-form">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+    </main>
     <footer>
 	    <p>&copy; 2024 HealthConnect. All rights reserved.</p>
     </footer>
